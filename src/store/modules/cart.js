@@ -9,7 +9,7 @@ export default {
     },
     mutations: {
         addProductToCart(state, payload) {
-            productData = payload.products;
+            const productData = payload.products;
             const productInCartIndex = state.items.findIndex(
                 (ci) => ci.productId === productData.id
             );
